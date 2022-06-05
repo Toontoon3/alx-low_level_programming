@@ -1,10 +1,11 @@
 #include <stdio.h>
 #include <unistd.h>
 /**
- * main - entry point
- * my hello, putchar task
- * Retur: return 1 after program execution
+ * main - use to return the integer value 1
+ *
  * Description: use to print to standard output in the main function
+ *
+ * Return: return the value 1
  */
 
 int main(void)
