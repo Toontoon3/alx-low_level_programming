@@ -2,31 +2,30 @@
 
 /**
  * rev_string - reverse string
- * @s: param
+ * @s: value to be evaluate.
+ * Return: not.
  */
 
 void rev_string(char *s)
 {
+	int len = 0;
+	int l = 0;
+	char *y = s;
+	int e = 0;
+	int x;
+	char n;
 
-	int i, size, half;
-	char first, last;
-
-
-	i = 0;
-	while (s[i] != '\0')
+	while (*y != '\0')
 	{
-		i++;
+		y++;
+		len++;
 	}
-
-	size = i - 1;
-	half = size / 2;
-	while (half >= 0)
+	l = len - 1;
+	for ( ; e < ((l / 2) + 1) ; e++)
 	{
-
-		first = s[size - half];
-		last = s[half];
-		s[half] = first;
-		s[size - half] = last;half--;
-		half--;
+		x = (l - e);
+		n = s[e];
+		s[e] = s[x];
+		s[x] = n;
 	}
 }
